@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col-sm-8 col-sm-offset-2">
+    <form (ngSubmit)="onLogin(f)" #f="ngForm">
+      <div class="form-group">
+        <label for="name">Login</label>
+        <input type="text" id="login" name="login" class="form-control" ngModel required>
+      </div>
+      <div class="form-group">
+        <label for="name">Password</label>
+        <input type="password" id="password" name="password" class="form-control" ngModel required>
+      </div>
+      <button class="btn btn-primary" type="submit" [disabled]="f.invalid">Connexion</button>
+    </form>
+  </div>
+</div>

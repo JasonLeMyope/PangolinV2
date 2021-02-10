@@ -1,0 +1,25 @@
+<div>
+    <form (ngSubmit)="onEdit(f)" #f="ngForm">
+        <div class="form-group">
+            <label for="name">Nom</label>
+            <input type="text" value='{{ nom }}' id="nom" name="nom" class="form-control" ngModel required>
+        </div>
+        <div class="form-group">
+            <label for="age">Age</label>
+            <input type="number" value='{{ age }}' id="age" name="age" min="1" max="200" class="form-control" ngModel required>
+        </div>
+        <div class="form-group">
+            <label for="famille">Famille</label>
+            <input type="text" value='{{ famille }}' id="famille" name="famille" class="form-control" ngModel required>
+        </div>
+        <div class="form-group">
+            <label for="race">Race</label>
+            <input type="text" value='{{ race }}' id="race" name="race" class="form-control" ngModel required>
+        </div>
+        <div class="form-group">
+            <label for="nourriture">Nourriture</label>
+            <input type="text" value='{{ nourriture }}' id="nourriture" name="nourriture" class="form-control" ngModel required>
+        </div>
+        <button class="btn btn-primary" type="submit">Modifier</button>
+    </form>
+</div>

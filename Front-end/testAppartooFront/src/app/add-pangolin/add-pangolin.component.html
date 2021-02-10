@@ -1,0 +1,27 @@
+<div>
+  <h2>Tous les pangolins</h2>
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Nom</th>
+            <th scope="col">Age</th>
+            <th scope="col">Famille</th>
+            <th scope="col">Race</th>
+            <th scope="col">Nourriture</th>
+            <th scope="col">Opérations</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let pangolin of liste; let i = index">
+            <td>{{ pangolin['nom'] }}</td>
+            <td>{{ pangolin['age'] }}</td>
+            <td>{{ pangolin['famille'] }}</td>
+            <td>{{ pangolin['race'] }}</td>
+            <td>{{ pangolin['nourriture'] }}</td>
+            <td>
+                <button (click)="addPangolin(i)">Ajouter en ami</button>
+            </td>
+          </tr>
+        </tbody>
+    </table>
+</div>
